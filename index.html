@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ArtVerse – Discover Art</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+  <header>
+    <h1>ArtVerse 🎨</h1>
+    <p>Personalized art recommendations based on your preferences</p>
+  </header>
+
+  <div class="container">
+    <div class="filters">
+      <div class="group">
+        <input id="search" placeholder="Search artworks..." />
+      </div>
+
+      <div class="group">
+        <strong>Styles</strong>
+        <div id="styleTags" class="tags"></div>
+      </div>
+
+      <div class="group">
+        <strong>Moods</strong>
+        <div id="moodTags" class="tags"></div>
+      </div>
+    </div>
+
+    <div id="results" class="grid"></div>
+    <div id="empty" class="empty" style="display:none">No matches found</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
